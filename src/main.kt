@@ -2,7 +2,7 @@ import java.math.BigDecimal
 import java.time.LocalDateTime
 
 fun main() {
-    println("Hello World!")
+
     var orderList = mutableListOf<OrdersAnalyzer.Order>()
     val pencil = OrdersAnalyzer.Product(9872, "Pencil", BigDecimal("3.12"))
     val pen = OrdersAnalyzer.Product(5723, "Pen", BigDecimal("4.22"))
@@ -12,7 +12,7 @@ fun main() {
 
     var orderbuff = OrdersAnalyzer.Order(
         554,
-        LocalDateTime.parse("2017-03-25T10:35:20"), //saturday
+        LocalDateTime.parse("2017-03-25T10:35:20"),
         listOf(OrdersAnalyzer.OrderLine(pencil, 3)))
     orderList.add(orderbuff)
     orderbuff = OrdersAnalyzer.Order(
